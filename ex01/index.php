@@ -20,13 +20,13 @@
             <h1>Conversor m/s para Km/h</h1>
             <form action=" <?= $_SERVER ['PHP_SELF'] ?> " method="get">
                 <label for="km"></label>
-                <input type="number" id="inputms" name="metro" placeholder="insira m/s" min="1" />
+                <input type="number" id="inputms" name="inputms" placeholder="insira m/s" min="1" />
                 <input type="submit" value="calcular" id="button" />
             </form>
         </header>
         <section>
             <?php 
-$initialValue = (int) $_REQUEST['metro'] ;
+$initialValue = (int) $_REQUEST['inputms']??1;
 $result = $initialValue * 3.6;
 echo "<h4>O valor " . $initialValue ."m/s em km é de " .  $result . " km/h</h4>";
 ?>
