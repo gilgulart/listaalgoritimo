@@ -13,7 +13,7 @@ class Worker{
 
     public function menssage(){
      if ($this-> worker === "Maria do Carmo"){ 
-        echo "<p> Nome do Funcionário: Maria do Carmo</p><p> Salário: {$this-> wage}</p><p> O funcionário Maria do Carmo tem um salário de R$ " . number_format($this->wage, 2,',','.') . " em Abril </p>" ;
+        echo "<p> Nome do Funcionário: Maria do Carmo</p><p> Salário: R\$ " . number_format($this-> wage, 2, ',','.') . "</p><p> O funcionário Maria do Carmo tem um salário de R\$ " . number_format($this->wage, 2,',','.') . " em Abril </p>" ;
 
      }
     }

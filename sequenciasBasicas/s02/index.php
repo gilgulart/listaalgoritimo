@@ -14,8 +14,7 @@
         <button type="submit">Enviar</button>
     </form>
     <?php 
-    $worker = $_REQUEST ['worker'] ;
-    var_dump($worker);
+    $worker = (float) $_REQUEST ['worker'] ;
     require_once "class.php" ;
     $maria = new Worker("Maria do Carmo",1850,45) ;
     $maria-> menssage() ;
