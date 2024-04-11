@@ -16,7 +16,6 @@
     <?php 
     $name = $_REQUEST['name'] ;
     echo "Olá " . $name . ", é um prazer te conhecer." ;
-    
     ?>
 
 </body>
