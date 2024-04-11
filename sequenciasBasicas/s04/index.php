@@ -17,7 +17,7 @@
     $velocity = $_REQUEST['km'] ;
     $multa = ($velocity - 80) *5 ;
     if ($velocity > 80) {
-        echo "Você recebeu uma multa por excesso de velocidade no valor de: R\$" . number_format($multa, 2, ',','.') ;
+        echo "Você recebeu uma multa por excesso de velocidade no valor de: R\$" . number_format($multa, 2, ',','.') . "<p>você estava a " . $velocity . "km/h numa via de 80km/h" ;
 
     }
     
